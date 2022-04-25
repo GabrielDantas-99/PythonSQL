@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-'''
+
 # Deletando linhas com o lacation 'Campina'
 # Importante inserir 'WHERE' quando não se quer deletar todas as linhas
 sql = "DELETE FROM users WHERE location = 'Campina'"
@@ -18,7 +18,7 @@ mycursor.execute(sql)
 mydb.commit()
 
 print(mycursor.rowcount, 'record(s) deleted')
-'''
+
 # Previninco SQL Injecction:
 sql = "DELETE FROM users WHERE location = %s"
 loc = ("Caicó",)
