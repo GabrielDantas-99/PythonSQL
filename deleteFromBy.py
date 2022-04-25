@@ -11,7 +11,7 @@ mycursor = mydb.cursor()
 
 # Deletando linhas com o lacation 'Campina'
 # Importante inserir 'WHERE' quando não se quer deletar todas as linhas
-sql = "DELETE FROM users WHERE location = 'Campina'"
+sql = "DELETE FROM users WHERE name = 'Gabriel'"
 
 mycursor.execute(sql)
 # Necessário para fazer mudanças no bd
