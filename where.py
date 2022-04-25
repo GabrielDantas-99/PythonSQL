@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-'''
+
 # Selecionando com um filtro:
 sql = "SELECT * FROM users WHERE location = 'Caicó'"
 mycursor.execute(sql)
@@ -27,7 +27,7 @@ myresult = mycursor.fetchall()
 
 for i in myresult:
     print(i)
-'''
+
 # Evitando injeção de SQL
 sql = "SELECT * FROM users WHERE location = %s"
 loc = ("Campina",)
